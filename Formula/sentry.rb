@@ -2,8 +2,7 @@ class Sentry < Formula
   desc "Terminal UI for monitoring OpenCode agent sessions"
   homepage "https://github.com/AxelMrak/sentry-oc"
   url "https://github.com/AxelMrak/sentry-oc.git",
-      tag:      "v0.2.0",
-      revision: "102fb0b4cba0798739a72b84f2fd01e5e04a0629"
+      tag: "v0.2.0"
   license "MIT"
 
   depends_on "rust" => :build
