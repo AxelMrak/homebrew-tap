@@ -8,8 +8,8 @@ class Sentry < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
-    bin.install "sentry"
+    system "cargo", "build", "--release"
+    bin.install "target/release/sentry"
   end
 
   test do
